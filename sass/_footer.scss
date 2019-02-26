@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    &__figure{
+        flex: 0 0 100%;
+        &__logo{
+
+        }
+    }
+
+    &__first__list{
+        list-style: none;
+        &__items{
+            // &:nth-child(4) {
+            //     background: red;
+            //     margin: 2rem 0;
+            //   }
+        }
+        &__twitter{
+
+        }
+    }
+
+    &__second__list{
+        &__items{
+
+        }
+        &__fb{
+
+        }
+    }
+
+    &__third__list{
+        &__items{
+
+        }
+        &__youtube{
+
+        }
+    }
+
+    &__fourth__list{
+        &__items{
+
+        }
+        &__instagram{
+            
+        }
+    }
+}

@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* inherited the box-sizing property in the body selector to apply in the entire document */
+  box-sizing: inherit; }
+
+body {
+  /* let us customize the box size model with specific unit without the default values */
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.navbar {
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  height: 32px;
+  background: #fff;
+  box-shadow: 0 1px 3px #cd0912; }
+  .navbar__sub-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background: #cd0912;
+    background-image: linear-gradient(#cc0000, #920000); }
+    .navbar__sub-container__top {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin-left: 15rem; }
+      .navbar__sub-container__top .navbar-menu {
+        margin-right: 1rem; }
+        .navbar__sub-container__top .navbar-menu__img {
+          width: 30px; }
+      .navbar__sub-container__top .navbar-logo {
+        margin-top: 6px;
+        margin-right: 28px; }
+        .navbar__sub-container__top .navbar-logo__img {
+          width: 220px; }
+    .navbar__sub-container__list {
+      margin: 0 6px; }
+      .navbar__sub-container__list__link {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none; }
+  .navbar__bottom {
+    display: flex;
+    margin: 2.3rem 0 0 20.5rem;
+    list-style: none; }
+    .navbar__bottom__social-media {
+      margin-top: 1px;
+      width: 165px; }
+    .navbar__bottom__list__link {
+      font-size: 18px;
+      line-height: 23px;
+      margin: 0 10px;
+      color: #000;
+      text-decoration: none; }
+      .navbar__bottom__list__link:hover {
+        color: #cd0912; }
+      .navbar__bottom__list__link--active {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: 1.5rem; }
+
+.main-container {
+  margin: 0 auto;
+  width: 55%;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices */
+  /* Large Devices, Wide Screens */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices */
+  /* Large Devices, Wide Screens */ }
+  @media (max-width: 1024px) {
+    .main-container {
+      width: 80%; } }
+  @media (max-width: 512px) {
+    .main-container {
+      width: 95%; } }
+  .main-container .title__link-list {
+    display: flex;
+    list-style: none;
+    margin-top: 2rem; }
+    .main-container .title__link-list__text {
+      font-size: 16px;
+      text-decoration: none;
+      color: #1689c4;
+      margin-right: 10px; }
+  .main-container .title__chevron {
+    margin-right: 10px; }
+  .main-container .title__header__heading {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 54px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 512px) {
+      .main-container .title__header__heading {
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 1rem; } }
+  .main-container .title__header__paragraph {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #888;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EAEAEA;
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 512px) {
+      .main-container .title__header__paragraph {
+        font-size: 20px;
+        line-height: 28px; } }
+  .main-container .title__author {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 10px; }
+    .main-container .title__author__name {
+      line-height: 19px;
+      text-decoration: none;
+      color: #3eafe9; }
+  .main-container .main-content {
+    margin-top: 1rem; }
+    .main-container .main-content .figure {
+      margin-top: 1rem; }
+      .main-container .main-content .figure__image {
+        width: 100%; }
+    .main-container .main-content__paragraph {
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 29px;
+      margin-top: 1rem;
+      color: #444; }
+    .main-container .main-content__heading {
+      margin-top: 1rem; }
+      .main-container .main-content__heading__title {
+        font-size: 32px;
+        font-weight: 600; }
+        .main-container .main-content__heading__title--font {
+          font-size: 24px;
+          font-weight: 320;
+          padding-top: 1rem; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap; }
+  .footer__figure {
+    flex: 0 0 100%; }
+  .footer__first__list {
+    list-style: none; }

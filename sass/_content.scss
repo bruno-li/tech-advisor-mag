@@ -1,0 +1,109 @@
+.main-container {
+    margin: 0 auto;
+    width: 55%;
+    // MEDIA QUERIES
+    @include respond(tab-port){
+      width: 80%;
+    }
+    @include respond(small-phone){
+      width: 95%;
+    }
+
+    // HEADER SECTION
+.title {
+    // header top link list
+    &__link-list{
+      display: flex;
+      list-style: none;
+      margin-top: 2rem;
+        &__text{
+          font-size: 16px;
+          text-decoration: none;
+          color: #1689c4;
+          margin-right:  10px;;
+        }
+      }
+    &__chevron{
+      margin-right: 10px;
+    }
+
+    // HEADER
+    &__header{
+        &__heading{
+          font-size: 52px;
+          font-weight: 600;
+          line-height: 54px;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+
+          // MEDIA QUERIES
+          @include respond(small-phone){
+            font-size: 40px;
+            line-height: 46px;
+            margin-bottom: 1rem;
+          }
+        }
+        &__paragraph{
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: 300;
+          color: #888;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #EAEAEA;
+                   // MEDIA QUERIES
+          @include respond(small-phone){
+              font-size: 20px;
+              line-height: 28px;
+              
+            }
+        }
+    }
+    &__author{
+      font-weight: 300;
+      font-size: 16px;
+      margin-top: 10px;
+        &__name{
+          line-height: 19px;
+          text-decoration: none;
+          color: #3eafe9;
+        }
+    }
+   }
+
+
+//    MAIN CONTENT
+  .main-content{
+    margin-top: 1rem;
+    .figure{
+      margin-top: 1rem;
+      &__image{
+        width: 100%;
+      }
+    }
+      // PARAGRAPHS
+    &__paragraph{
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 29px;
+      margin-top: 1rem;
+      color: #444;
+    }
+
+    &__heading{
+      margin-top: 1rem;
+      &__title{
+        font-size: 32px;
+        font-weight: 600;
+        
+        &--font{
+          font-size: 24px;
+          font-weight: 320;
+          padding-top: 1rem;
+        }
+
+      }
+    }
+
+  }
+
+}
