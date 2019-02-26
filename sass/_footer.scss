@@ -1,50 +1,133 @@
 .footer{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 26px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    color: #fff;
+    background-color: #CD0812;
     &__figure{
         flex: 0 0 100%;
         &__logo{
-
+            margin-top: 1.5rem;
+            margin-left: 16rem;
+            width: 250px;
         }
     }
 
     &__first__list{
+        flex: 0 0 15%;
         list-style: none;
         &__items{
-            // &:nth-child(4) {
-            //     background: red;
-            //     margin: 2rem 0;
-            //   }
+            // border: 2px solid yellow;
+
+            margin: 12px 16px;
+            &:nth-child(4) {
+                margin: 52px 16px;
+              }
+            &:nth-child(7){
+                margin: 52px 16px;
+            }
+            &:nth-child(9){
+                margin: 52px 16px;
+            }
         }
         &__twitter{
-
+            display: inline-block;
+            width: 29px;
         }
     }
 
     &__second__list{
-        &__items{
+        flex: 0 0 18%;
+        list-style: none;
 
+        &__items{
+            margin: 12px 16px;
+
+            &:nth-child(4) {
+                margin: 52px 16px;
+              }
+              &:nth-child(7){
+                margin: 210px 0 16px 16px;
+            }
+            &:nth-child(8){
+                margin: 105px 0 16px 16px;
+            }
         }
         &__fb{
+            width: 29px;
 
         }
     }
 
     &__third__list{
-        &__items{
+        flex: 0 0 15%;
+        list-style: none;
 
+        &__items{
+            margin: 12px 16px;
+            &:nth-child(4) {
+                margin: 52px 16px;
+              }
+              &:nth-child(6) {
+                margin-top: 290px;
+              }
+              &:nth-child(7) {
+                margin-bottom: 95px;
+              }
         }
         &__youtube{
+            width: 29px;
 
         }
     }
 
     &__fourth__list{
-        &__items{
+        flex: 0 0 16%;
+        list-style: none;
 
-        }
-        &__instagram{
+        &__items{
+            margin: 12px 16px;
+            &:nth-child(4) {
+                margin: 52px 16px;
+              }
+              &:nth-child(6) {
+                margin-top: 252px;
+              }
+              &:nth-child(8) {
+                margin-top: 98px;
+              }
+
             
         }
+        &__instagram{
+            width: 29px;
+
+        }
+    }
+
+    &__legal{
+        display: flex;
+        flex: 0 0 70%;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        border-top: 1px solid #fff;
+        &__logo{
+            margin-top: 1rem;
+            &__img{
+                width: 130px;
+            }
+        }
+     
+        &__text{
+            margin-top: 1.5rem;
+            margin-right: 15rem;
+            font-size: 20px;
+        }
+       
     }
 }

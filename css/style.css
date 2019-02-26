@@ -135,9 +135,86 @@ body {
           padding-top: 1rem; }
 
 .footer {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 26px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  color: #fff;
+  background-color: #CD0812; }
   .footer__figure {
     flex: 0 0 100%; }
+    .footer__figure__logo {
+      margin-top: 1.5rem;
+      margin-left: 16rem;
+      width: 250px; }
   .footer__first__list {
+    flex: 0 0 15%;
     list-style: none; }
+    .footer__first__list__items {
+      margin: 12px 16px; }
+      .footer__first__list__items:nth-child(4) {
+        margin: 52px 16px; }
+      .footer__first__list__items:nth-child(7) {
+        margin: 52px 16px; }
+      .footer__first__list__items:nth-child(9) {
+        margin: 52px 16px; }
+    .footer__first__list__twitter {
+      display: inline-block;
+      width: 29px; }
+  .footer__second__list {
+    flex: 0 0 18%;
+    list-style: none; }
+    .footer__second__list__items {
+      margin: 12px 16px; }
+      .footer__second__list__items:nth-child(4) {
+        margin: 52px 16px; }
+      .footer__second__list__items:nth-child(7) {
+        margin: 210px 0 16px 16px; }
+      .footer__second__list__items:nth-child(8) {
+        margin: 105px 0 16px 16px; }
+    .footer__second__list__fb {
+      width: 29px; }
+  .footer__third__list {
+    flex: 0 0 15%;
+    list-style: none; }
+    .footer__third__list__items {
+      margin: 12px 16px; }
+      .footer__third__list__items:nth-child(4) {
+        margin: 52px 16px; }
+      .footer__third__list__items:nth-child(6) {
+        margin-top: 290px; }
+      .footer__third__list__items:nth-child(7) {
+        margin-bottom: 95px; }
+    .footer__third__list__youtube {
+      width: 29px; }
+  .footer__fourth__list {
+    flex: 0 0 16%;
+    list-style: none; }
+    .footer__fourth__list__items {
+      margin: 12px 16px; }
+      .footer__fourth__list__items:nth-child(4) {
+        margin: 52px 16px; }
+      .footer__fourth__list__items:nth-child(6) {
+        margin-top: 252px; }
+      .footer__fourth__list__items:nth-child(8) {
+        margin-top: 98px; }
+    .footer__fourth__list__instagram {
+      width: 29px; }
+  .footer__legal {
+    display: flex;
+    flex: 0 0 70%;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #fff; }
+    .footer__legal__logo {
+      margin-top: 1rem; }
+      .footer__legal__logo__img {
+        width: 130px; }
+    .footer__legal__text {
+      margin-top: 1.5rem;
+      margin-right: 15rem;
+      font-size: 20px; }
