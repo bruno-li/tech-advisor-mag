@@ -1,9 +1,11 @@
 .main-container {
   margin: 0 auto;
   width: 57%;
+  @include respond(tab-port){
+    width: 85%;
+  }
     // HEADER SECTION
 .title {
-    // header top link list
     &__link-list{
       display: flex;
       list-style: none;
@@ -11,9 +13,9 @@
         &__text{
           font-size: 20px;
           text-decoration: none;
-          margin-right:  14px;;
-          border-bottom: 1px solid #cd0912;
+          margin-right:  5px;
           color: #6D6D72;
+          border-bottom: 1px solid #cd0912;
           &:hover{
             color: #cd0912;
           }
@@ -21,9 +23,12 @@
       }
     &__chevron{
       margin-right: 10px;
+      margin-top: 1px;
+      width: 16px;
+      height: 100%;
     }
 
-    // HEADER
+    // HEADING
     &__header{
         &__heading{
           font-family: 'Noto Sans', sans-serif;
@@ -56,8 +61,8 @@
       margin: 3rem 0;
       &__img{
         display: block;
-        width: 510px;
         margin: 0 auto;
+        width: 510px;
 
       }
     }

@@ -21,19 +21,23 @@
             align-items: center;
             list-style: none;
             margin-left: 15rem;
-
+            // MEDIA QUERIES
+            @include respond(tab-port){
+                margin-left: 1rem;
+            }
+            // MENU
             .navbar-menu{
                 margin-right: 1rem;
                 &__img{
                     width: 30px;
                 }
             }
-
+            // COMPANY LOGO
             .navbar-logo{
                 margin-top: 6px;
                 margin-right: 28px;
                 &__img{
-                    width: 220px;
+                    width: 210px;
                 }
             }
         }
@@ -54,12 +58,15 @@
       display: flex;
     margin: 2.3rem 0 0 17.5rem;
     list-style: none;
+       // MEDIA QUERIES
+       @include respond(tab-port){
+        margin-left: 3.5rem;
+    }
      // SOCIAL MEDIA LOGO
       &__social-media{
         margin-top: 1px;
         width: 165px;
-         }
-
+     }
       &__list{
         &__link{
             font-size: 18px;
@@ -81,6 +88,10 @@
      }          
      }        
 }
+
+
+
+
 
 
 
