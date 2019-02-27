@@ -4,6 +4,9 @@
   @include respond(tab-port){
     width: 85%;
   }
+  @include respond(phone){
+    width: 95%;
+  }
     // HEADER SECTION
 .title {
     &__link-list{
@@ -19,6 +22,14 @@
           &:hover{
             color: #cd0912;
           }
+          // MEDIA QUERIES
+          @include respond(small-phone){
+            font-size: 16px;
+          }
+        }
+        // MEDIA QUERIES
+        @include respond(small-phone){
+          margin-top: 1.5rem;
         }
       }
     &__chevron{
@@ -37,6 +48,12 @@
           line-height: 68px;
           margin-top: 3rem;
           margin-bottom: 1rem;
+          // MEDIA QUERIES
+          @include respond(small-phone){
+            font-size: 38px;
+            line-height: 40px;
+            margin-top: 1rem;
+          }
         }
 
         &__paragraph{
@@ -45,12 +62,20 @@
           font-weight: 400;
           padding-bottom: 14px;
           border-bottom: 1px solid #EAEAEA;
+          // MEDIA QUERIES
+          @include respond(small-phone){
+            font-size: 22px;
+          }
         }
     }
     &__author{
       font-weight: 400;
       font-size: 23px;
       margin-top: 16px;
+      // MEDIA QUERIES
+      @include respond(small-phone){
+        font-size: 20px;
+      }
         &__name{
           color: #000;
           text-decoration: none;
@@ -58,11 +83,11 @@
         }
     }
     &__figure{
-      margin: 3rem 0;
+      margin: 2.5rem 0;
       &__img{
         display: block;
         margin: 0 auto;
-        width: 510px;
+        width: 55%;
 
       }
     }

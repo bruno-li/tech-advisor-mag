@@ -25,11 +25,12 @@
             @include respond(tab-port){
                 margin-left: 1rem;
             }
+   
             // MENU
             .navbar-menu{
                 margin-right: 1rem;
                 &__img{
-                    width: 30px;
+                    width: 28px;
                 }
             }
             // COMPANY LOGO
@@ -38,12 +39,21 @@
                 margin-right: 28px;
                 &__img{
                     width: 210px;
+                    // MEDIA QUERIES
+                    @include respond(small-phone){
+                        width: 175px;
+                        margin-left: 2.7rem;
+                    }
                 }
             }
         }
         // TOP NAVBAR LINK LIST
         &__list{
             margin: 0 6px;
+            // MEDIA QUERIES
+            @include respond(phone){
+                display: none;
+            }
             &__link{
                 font-size: 20px;
                 color: #fff;
@@ -62,12 +72,21 @@
        @include respond(tab-port){
         margin-left: 3.5rem;
     }
+    @include respond(small-phone){
+        display: none;
+    }
      // SOCIAL MEDIA LOGO
       &__social-media{
         margin-top: 1px;
         width: 165px;
      }
       &__list{
+           // MEDIA QUERIES
+         @include respond(phone){
+           &:nth-child(+n+7){
+              display: none;
+            }
+         }
         &__link{
             font-size: 18px;
             line-height: 23px;
@@ -78,7 +97,7 @@
             &:hover{
                 color: #cd0912;
             }
-
+     
             &--active{
                 text-transform: uppercase;
                 font-weight: 700;
